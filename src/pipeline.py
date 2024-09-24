@@ -30,4 +30,5 @@ def infer(request: TextToImageRequest, pipeline: StableDiffusionXLPipelineFaster
         height=request.height,
         generator=generator,
         cache_interval=2, cache_layer_id=0, cache_block_id=0
+        num_inference_steps=20,
     ).images[0]
